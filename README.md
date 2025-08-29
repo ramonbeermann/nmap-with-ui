@@ -41,3 +41,13 @@ Contributing
 Information about filing bug reports and contributing to the Nmap project can
 be found in the [HACKING](HACKING) and [CONTRIBUTING.md](CONTRIBUTING.md)
 files.
+
+Web UI
+------
+A simple Flask-based web interface is available in the `webui` directory. To run it, install Flask with `pip install flask` and execute:
+
+```
+python webui/app.py
+```
+
+Then open `http://localhost:5000/` in a web browser to view the HTML interface.
