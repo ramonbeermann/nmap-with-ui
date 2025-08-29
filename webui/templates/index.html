@@ -5,7 +5,17 @@
     <title>Nmap Web UI</title>
 </head>
 <body>
-    <h1>Welcome to Nmap Web UI</h1>
-    <p>This is a simple web interface for Nmap.</p>
+    <h1>Nmap Web UI</h1>
+    <form method="post">
+        <label for="target">Target:</label>
+        <input type="text" id="target" name="target" required>
+        <label for="options">Options:</label>
+        <input type="text" id="options" name="options" placeholder="-sV">
+        <button type="submit">Scan</button>
+    </form>
+    {% if output %}
+    <h2>Results</h2>
+    <pre>{{ output }}</pre>
+    {% endif %}
 </body>
 </html>
